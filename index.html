@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Management</title>
+  <style>
+    .form{
+      text-align: center;
+      margin: 100px;
+      padding: 10px;
+      border: 2px solid burlywood;
+    }
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid black;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2c5c2e;
+      transition: 0.4s;
+    }
+
+    
+  </style>
+</head>
+<body>
+<div class="form">
+
+  <h2> Expense Tracker </h2>
+
+  <form id="my-form">
+
+    <input style="margin-bottom: 10px;" type="text" id="expense" name="expense" placeholder="Spent on" required> <br>
+    <input style="margin-bottom: 10px;" type="text" id="description" name="description" placeholder="Description" required> <br>
+    <input type="number" id="amount" name="amounts" placeholder="₹₹₹ Amount ₹₹₹" required><br><br>
+    <button type="submit">Spend</button>
+  </form>
+
+
+</div>
+  
+  <h2 style="text-align: center;">Appointment Data</h2>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
